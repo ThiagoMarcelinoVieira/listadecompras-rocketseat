@@ -36,58 +36,16 @@
 
       <ul id="shopping-list" class="shopping-list">
 
-        <li class="list-item">
-          <label class="checkbox-container">
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            <span class="item-text">Pão de forma</span>
-          </label>
-          <button class="delete-btn" aria-label="Remover item">
-            <img src="assets/icons/trash.svg" alt="Lixeira">
-          </button>
-        </li>
-
-        <li class="list-item">
-          <label class="checkbox-container">
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            <span class="item-text">Café preto</span>
-          </label>
-          <button class="delete-btn">
-            <img src="assets/icons/trash.svg" alt="Lixeira">
-          </button>
-        </li>
-
-        <li class="list-item">
-          <label class="checkbox-container">
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            <span class="item-text">Suco de laranja</span>
-          </label>
-          <button class="delete-btn">
-            <img src="assets/icons/trash.svg" alt="Lixeira">
-          </button>
-        </li>
-
-        <li class="list-item">
-          <label class="checkbox-container">
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            <span class="item-text">Bolacha</span>
-          </label>
-          <button class="delete-btn">
-            <img src="assets/icons/trash.svg" alt="Lixeira">
-          </button>
-        </li>
       </ul>
 
-      <div id="alert-box">
+      <div id="alert-box" class="hidden">
         <div class="alert-content">
           <img src="assets/icons/warning.svg" alt="">
           <span>O item foi removido da lista</span>
-          <img src="assets/icons/delete-small.svg" alt="">
+          <button class="close-alert">
+            <img src="assets/icons/delete-small.svg" alt="">
+          </button>
         </div>
-        <button class="close-alert">&times;</button>
       </div>
 
     </main>
