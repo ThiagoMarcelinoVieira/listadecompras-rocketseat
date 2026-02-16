@@ -47,3 +47,15 @@ function renderItem(itemText) {
 
   list.appendChild(newItem)
 }
+
+form.onsubmit = (event) => {
+  event.preventDefault()
+  
+  if (inputAdd.value.trim() === "") return;
+
+  renderItem(inputAdd.value)
+  saveToStorage()
+
+  inputAdd.value = ""
+  inputAdd.focus()
+}
