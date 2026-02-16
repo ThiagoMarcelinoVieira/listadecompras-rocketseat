@@ -20,3 +20,21 @@ function loadFromStorage() {
     items.forEach(text => renderItem(text));
   }
 }
+
+// Função para criar o item
+function renderItem(itemText) {
+  const newItem = document.createElement("li")
+  newItem.classList.add("list-item")
+
+  newItem.innerHTML = `
+    <label class="checkbox-container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        <span class="item-text">${itemText}</span>
+    </label>
+    <button class="delete-btn" aria-label="Remover item">
+        <img src="assets/icons/trash.svg" alt="Lixeira"> 
+    </button>
+  `
+
+}
