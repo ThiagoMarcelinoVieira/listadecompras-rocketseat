@@ -36,7 +36,7 @@ function renderItem(itemText) {
         <img src="assets/icons/trash.svg" alt="Lixeira"> 
     </button>
   `
-
+  // Deletar o item
   const deleteBtn = newItem.querySelector(".delete-btn")
   deleteBtn.onclick = () => {
     newItem.remove();
@@ -59,3 +59,13 @@ form.onsubmit = (event) => {
   inputAdd.value = ""
   inputAdd.focus()
 }
+
+document.querySelector(".close-alert").onclick = () => {
+  alertBox.classList.add("hidden")
+}
+
+document.querySelector(".close-alert").onclick = () => {
+  alertBox.classList.add("hidden")
+}
+
+loadFromStorage()
