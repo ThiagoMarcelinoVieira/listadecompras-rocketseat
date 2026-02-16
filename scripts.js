@@ -11,3 +11,12 @@ function saveToStorage() {
   });
   localStorage.setItem("@quicklist:items", JSON.stringify(items));
 }
+
+// Recupera os dados salvos e reconstrói a lista ao iniciar a aplicação
+function loadFromStorage() {
+  const data = localStorage.getItem("@quicklist:items");
+  if (data) {
+    const items = JSON.parse(data);
+    items.forEach(text => renderItem(text));
+  }
+}
