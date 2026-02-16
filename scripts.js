@@ -37,4 +37,13 @@ function renderItem(itemText) {
     </button>
   `
 
+  const deleteBtn = newItem.querySelector(".delete-btn")
+  deleteBtn.onclick = () => {
+    newItem.remove();
+    saveToStorage();
+    alertBox.classList.remove("hidden");
+    setTimeout(() => alertBox.classList.add("hidden"), 3000);
+  }
+
+  list.appendChild(newItem)
 }
