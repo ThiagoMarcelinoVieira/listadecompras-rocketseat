@@ -64,8 +64,4 @@ document.querySelector(".close-alert").onclick = () => {
   alertBox.classList.add("hidden")
 }
 
-document.querySelector(".close-alert").onclick = () => {
-  alertBox.classList.add("hidden")
-}
-
 loadFromStorage()
